@@ -1,11 +1,11 @@
 {
-  "name": "typescipt-app",
+  "name": "express-api-starter-ts",
   "version": "1.0.0",
   "description": "",
-  "main": "./build/main.js",
+  "main": "./dist/main.js",
   "scripts": {
     "start": "npx tsc -w",
-    "dev": "npx nodemon ./build/main.js"
+    "dev": "npx nodemon ./dist/main.js"
   },
   "keywords": [],
   "author": "",
