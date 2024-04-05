@@ -1,11 +1,9 @@
 import { Router } from "express";
-import emojisRouter from "./emojis";
+import { emojisRouter } from "./emojis";
 import * as controller from "./controller";
 
-const router = Router();
+export const apiRouter = Router();
 
-router.use("/emojis", emojisRouter);
+apiRouter.use("/emojis", emojisRouter);
 
-router.get("/", controller.getApi);
-
-export default router;
+apiRouter.get("/", controller.getApi);

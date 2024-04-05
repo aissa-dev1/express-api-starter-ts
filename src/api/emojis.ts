@@ -1,8 +1,6 @@
 import { Router } from "express";
 import * as controller from "./controller";
 
-const router = Router();
+export const emojisRouter = Router();
 
-router.get("/", controller.getEmojis);
-
-export default router;
+emojisRouter.get("/", controller.getEmojis);
